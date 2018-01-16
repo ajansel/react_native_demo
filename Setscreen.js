@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, FlatList, ScrollView, Alert } from 'react-native';
 
-export default class Homescreen extends React.Component {
+export default class Setscreen extends React.Component {
   static navigationOptions = {
     title: 'Home'
   };
