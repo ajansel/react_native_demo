@@ -12,14 +12,14 @@ export default class Card extends React.Component {
     return (
       <View style={styles.container}>
         <ScrollView>
-        <Text style={[styles.header, styles.bold]} >{card.name}</Text>
-        <Text style={styles.listItem} ><Text style={styles.boldAndUnderlined}>Colors:</Text> {card.colors}</Text>
-        <Text style={styles.listItem} ><Text style={styles.boldAndUnderlined}>CMC:</Text> { card.cmc }</Text>
-        <Text style={styles.listItem} ><Text style={styles.boldAndUnderlined}>Type:</Text> { card.type }</Text>
-        <Text style={styles.listItem} ><Text style={styles.boldAndUnderlined}>Rarity:</Text> { card.rarity }</Text>
-        <Text style={styles.listItem} ><Text style={styles.boldAndUnderlined}>No.:</Text> { card.number }</Text>
-        <Text style={styles.listItem} ><Text style={styles.boldAndUnderlined}>Text:</Text> { card.text }</Text>
-        <Image style={{ width: 223, height: 311, marginTop: 10 }} source={{ uri: card.imageUrl }}/>
+          <Text style={[styles.header, styles.bold]} >{card.name}</Text>
+          <Text style={styles.listItem} ><Text style={styles.boldAndUnderlined}>Colors:</Text> {card.colors}</Text>
+          <Text style={styles.listItem} ><Text style={styles.boldAndUnderlined}>CMC:</Text> { card.cmc }</Text>
+          <Text style={styles.listItem} ><Text style={styles.boldAndUnderlined}>Type:</Text> { card.type }</Text>
+          <Text style={styles.listItem} ><Text style={styles.boldAndUnderlined}>Rarity:</Text> { card.rarity }</Text>
+          <Text style={styles.listItem} ><Text style={styles.boldAndUnderlined}>No.:</Text> { card.number }</Text>
+          <Text style={styles.listItem} ><Text style={styles.boldAndUnderlined}>Text:</Text> { card.text }</Text>
+          <Image style={{ width: 223, height: 311, marginTop: 10 }} source={{ uri: card.imageUrl }}/>
         </ScrollView>
       </View>
     );
