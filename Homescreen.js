@@ -68,7 +68,8 @@ let sets = results.sets.map(
   (set) => {
     return {
       name: set.name,
-      releaseDate: set.releaseDate
+      releaseDate: set.releaseDate,
+      code: set.code
     }
   }
 ).sort(function (card1, card2) {
