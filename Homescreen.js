@@ -13,8 +13,10 @@ export default class Homescreen extends React.Component {
 
   handleChange = (set) => {
     const { navigate } = this.props.navigation;
-    this.setState({ set: set }, () => {      
-      navigate('Set', { set: sets[this.state.set] })
+    this.setState({ set: set }, () => { 
+      if (this.state.set !== 'default') {
+        navigate('Set', { set: sets[this.state.set] })
+      }     
     })
   }
 
